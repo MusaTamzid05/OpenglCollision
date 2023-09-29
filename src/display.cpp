@@ -8,7 +8,8 @@
 #include <iostream>
 #include "shape.h"
 
-#include "triangle.h"
+#include "game_object.h"
+#include "cube.h"
 
 namespace Engine {
 
@@ -22,16 +23,16 @@ namespace Engine {
             return;
         }
 
+        //game_objects.push_back(new Cube());
+        game_objects.push_back(new Cube());
+
         std::cout << "Display initialize.\n";
         
-        shapes.push_back(new Triangle());
 
     }
 
     Display::~Display() {
 
-        for(Shape* shape : shapes)
-            delete shape;
 
         glfwTerminate();
     }
@@ -72,15 +73,14 @@ namespace Engine {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        for(GameObject* game_object : game_objects)
+            game_object->render();
 
-        for(Shape* shape : shapes)
-            shape->draw();
+
     }
 
     void Display::update() {
 
-        for(Shape* shape : shapes)
-            shape->update();
 
     }
 
@@ -91,8 +91,6 @@ namespace Engine {
             glfwSetWindowShouldClose(m_window, true);
 
 
-        for(Shape* shape : shapes)
-            shape->handle_input();
     }
 
     void Display::run() {

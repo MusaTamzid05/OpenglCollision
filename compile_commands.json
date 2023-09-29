@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++ -Dmusa_gl_libs_EXPORTS -I/home/musa/c++_pro/opengl_pro/physics_test1/include -fPIC -std=c++11 -o CMakeFiles/musa_gl_libs.dir/src/glad.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/glad.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/glad.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/opengl_pro/physics_test1/include  -o CMakeFiles/physics.dir/src/main.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/main.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/main.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/opengl_pro/physics_test1/include  -o CMakeFiles/physics.dir/src/display.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/display.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/display.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/opengl_pro/physics_test1/include  -o CMakeFiles/physics.dir/src/shader.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/shader.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/shader.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/opengl_pro/physics_test1/include  -o CMakeFiles/physics.dir/src/shape.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/shape.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/shape.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/opengl_pro/physics_test1/include  -o CMakeFiles/physics.dir/src/triangle.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/triangle.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/triangle.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/opengl_pro/physics_test1/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/opengl_pro/physics_test1/include  -o CMakeFiles/physics.dir/src/cube_mesh_component.cpp.o -c /home/musa/c++_pro/opengl_pro/physics_test1/src/cube_mesh_component.cpp",
+  "file": "/home/musa/c++_pro/opengl_pro/physics_test1/src/cube_mesh_component.cpp"
+}
+]

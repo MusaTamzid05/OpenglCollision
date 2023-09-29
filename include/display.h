@@ -6,10 +6,12 @@
 
 
 struct GLFWwindow;
+struct GameObject;
+struct Cube;
 
 namespace Engine {
 
-    class Shape;
+
 
     class Display {
 
@@ -44,8 +46,7 @@ namespace Engine {
             int height;
 
             GLFWwindow* m_window;
-
-            std::vector<Shape*> shapes;
+            std::vector<GameObject*> game_objects;
     };
 
 };
