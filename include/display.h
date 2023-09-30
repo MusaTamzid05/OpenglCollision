@@ -40,7 +40,6 @@ namespace Engine {
 
             void draw();
             void update();
-            void handle_input();
 
             int width;
             int height;

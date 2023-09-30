@@ -44,6 +44,7 @@ set(SOURCE_FILES
     src/camera.cpp
     src/game_object.cpp
     src/transform_component.cpp
+    src/input_object.cpp
     )
 
 add_executable(physics  ${SOURCE_FILES})

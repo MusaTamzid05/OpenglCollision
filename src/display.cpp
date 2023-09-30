@@ -10,6 +10,7 @@
 
 #include "game_object.h"
 #include "cube.h"
+#include "input_object.h"
 
 namespace Engine {
 
@@ -25,6 +26,7 @@ namespace Engine {
 
         //game_objects.push_back(new Cube());
         game_objects.push_back(new Cube());
+        game_objects.push_back(new InputObject(m_window));
 
         std::cout << "Display initialize.\n";
         
@@ -87,13 +89,6 @@ namespace Engine {
     }
 
 
-    void Display::handle_input() {
-
-        if(glfwGetKey(m_window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-            glfwSetWindowShouldClose(m_window, true);
-
-
-    }
 
     void Display::run() {
 
@@ -104,7 +99,7 @@ namespace Engine {
         }
 
         while(!glfwWindowShouldClose(m_window)) {
-            handle_input();
+            //handle_input();
             draw();
             update();
 
