@@ -11,6 +11,7 @@
 #include "game_object.h"
 #include "cube.h"
 #include "input_object.h"
+#include "collider.h"
 
 namespace Engine {
 
@@ -25,9 +26,15 @@ namespace Engine {
         }
 
         //game_objects.push_back(new Cube());
-        Cube* cube = new Cube();
-        game_objects.push_back(cube);
-        game_objects.push_back(new InputObject(m_window, cube));
+        Cube* cube1 = new Cube();
+        cube1->transform_component.position = glm::vec3(-1.0f, 0.0f, 0.0f);
+
+        Cube* cube2= new Cube();
+        cube2->transform_component.position = glm::vec3(1.0f, 0.0f, 0.0f);
+        game_objects.push_back(cube1);
+        game_objects.push_back(cube2);
+
+        game_objects.push_back(new InputObject(m_window, cube1));
 
         std::cout << "Display initialize.\n";
         
@@ -85,6 +92,17 @@ namespace Engine {
     void Display::update() {
         for(GameObject* game_object : game_objects)
             game_object->update();
+
+        SphereCollider* collider1 = game_objects[0]->collider;
+        SphereCollider* collider2 = game_objects[1]->collider;
+
+        if(collider1->does_intersect(collider2))
+            game_objects[0]->color = glm::vec4(1.0f, 0.0f, 0.0f, 0.0f);
+        else
+            game_objects[0]->color = glm::vec4(1.0f, 0.5f, 0.2f, 1.0f);
+
+
+
 
 
     }

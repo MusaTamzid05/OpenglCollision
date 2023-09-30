@@ -1,9 +1,11 @@
 #include "game_object.h"
 #include "shader.h"
 #include "camera.h"
+#include "collider.h"
 
 GameObject::GameObject() {
     color = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+    collider = new SphereCollider(this);
 }
 
 
