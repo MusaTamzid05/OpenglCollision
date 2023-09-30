@@ -9,7 +9,7 @@ class Shader;
 
 struct GameObject {
 
-    GameObject() {}
+    GameObject();
     virtual ~GameObject() {}
 
     virtual void render();
@@ -17,6 +17,8 @@ struct GameObject {
 
     Shader* shader;
     TransformCompoent transform_component;
+
+    glm::vec4 color;
 
 
 };

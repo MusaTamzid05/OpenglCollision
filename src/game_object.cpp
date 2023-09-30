@@ -2,6 +2,10 @@
 #include "shader.h"
 #include "camera.h"
 
+GameObject::GameObject() {
+    color = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+}
+
 
 void GameObject::render() {
 
@@ -12,6 +16,7 @@ void GameObject::render() {
 
     shader->setMat4("projection", projection);
     shader->setMat4("view", view);
+    shader->setVec4("color", color);
 }
 
 void GameObject::update() {
