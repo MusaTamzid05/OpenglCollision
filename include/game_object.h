@@ -6,6 +6,7 @@ class Shader;
 #include "transform_component.h"
 
 struct SphereCollider;
+struct AABBCollider;
 
 struct GameObject {
 
@@ -19,7 +20,7 @@ struct GameObject {
     TransformCompoent transform_component;
 
     glm::vec4 color;
-    SphereCollider* collider;
+    AABBCollider* collider;
 
 
 };

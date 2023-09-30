@@ -14,5 +14,21 @@ struct SphereCollider {
 
 };
 
+
+struct AABBCollider {
+
+    AABBCollider(GameObject* game_object);
+
+    bool does_intersect(AABBCollider* other) const;
+
+    glm::vec3 min;
+    glm::vec3 max;
+
+
+};
+
+
+
+
 #endif
 

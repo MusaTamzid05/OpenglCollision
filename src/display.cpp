@@ -93,8 +93,8 @@ namespace Engine {
         for(GameObject* game_object : game_objects)
             game_object->update();
 
-        SphereCollider* collider1 = game_objects[0]->collider;
-        SphereCollider* collider2 = game_objects[1]->collider;
+        AABBCollider* collider1 = game_objects[0]->collider;
+        AABBCollider* collider2 = game_objects[1]->collider;
 
         if(collider1->does_intersect(collider2))
             game_objects[0]->color = glm::vec4(1.0f, 0.0f, 0.0f, 0.0f);
