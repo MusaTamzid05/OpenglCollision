@@ -3,13 +3,18 @@
 
 #include "game_object.h"
 
+struct Cube;
+
 struct InputObject: GameObject {
-    InputObject(GLFWwindow* window);
+    InputObject(GLFWwindow* window, Cube* player);
 
     void render();
     void update();
 
     GLFWwindow* window;
+    Cube* player;
+
+    float speed;
 };
 
 #endif

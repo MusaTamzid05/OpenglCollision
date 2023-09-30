@@ -25,8 +25,9 @@ namespace Engine {
         }
 
         //game_objects.push_back(new Cube());
-        game_objects.push_back(new Cube());
-        game_objects.push_back(new InputObject(m_window));
+        Cube* cube = new Cube();
+        game_objects.push_back(cube);
+        game_objects.push_back(new InputObject(m_window, cube));
 
         std::cout << "Display initialize.\n";
         
