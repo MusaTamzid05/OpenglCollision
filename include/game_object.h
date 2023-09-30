@@ -3,6 +3,7 @@
 
 class Shader;
 
+#include "transform_component.h"
 
 
 
@@ -11,10 +12,11 @@ struct GameObject {
     GameObject() {}
     virtual ~GameObject() {}
 
-    virtual void render() = 0;
-    virtual void update() = 0;
+    virtual void render();
+    virtual void update();
 
     Shader* shader;
+    TransformCompoent transform_component;
 
 
 };

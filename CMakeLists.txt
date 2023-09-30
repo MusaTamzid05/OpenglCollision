@@ -41,6 +41,9 @@ set(SOURCE_FILES
     src/triangle.cpp
     src/cube_mesh_component.cpp
     src/cube.cpp
+    src/camera.cpp
+    src/game_object.cpp
+    src/transform_component.cpp
     )
 
 add_executable(physics  ${SOURCE_FILES})

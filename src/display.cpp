@@ -80,6 +80,8 @@ namespace Engine {
     }
 
     void Display::update() {
+        for(GameObject* game_object : game_objects)
+            game_object->update();
 
 
     }
