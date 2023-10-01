@@ -21,8 +21,7 @@ struct AABBCollider {
 
     bool does_intersect(AABBCollider* other) const;
 
-    glm::vec3 min;
-    glm::vec3 max;
+    GameObject* game_object;
 
 
 };
