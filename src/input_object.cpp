@@ -33,7 +33,20 @@ void InputObject::update() {
             glm::vec3 position = player->transform_component.position;
             position.x -= speed;
             player->transform_component.position = position;
+        }
 
+
+        if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+            glm::vec3 position = player->transform_component.position;
+            position.y -= speed;
+            player->transform_component.position = position;
+        }
+
+
+        if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+            glm::vec3 position = player->transform_component.position;
+            position.y += speed;
+            player->transform_component.position = position;
         }
 
 }
